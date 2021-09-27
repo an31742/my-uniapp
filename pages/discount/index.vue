@@ -1,21 +1,21 @@
 <template>
-	    <div class="game-box">
+	    <view class="game-box">
 	        <template
 	        v-for="(val, idx) of boundList">
-	        <div v-if="idx == 4" class="game-item game-begin" 
+	        <view v-if="idx == 4" class="game-item game-begin" 
 	            :key="idx"
 	            @click="beginGame">
 	            开始游戏
-	        </div>
-	        <div v-else :key="idx"
+	        </view>
+	        <view v-else :key="idx"
 	            class="game-item"
 	            :class="{
 	            active: idx === curGameIdx
 	            }">
 	            {{val}}
-	        </div>
+	        </view>
 	        </template>
-	    </div>
+	    </view>
 
 </template>
 <script>
@@ -118,8 +118,10 @@
 	        flex-wrap: wrap;
 	        text-align: center;
 	        .game-item {
+				font-size: 20px;
 	            width: 100px;
 	            height: 70px;
+				line-height: 70px;
 	            background: yellow;
 	            border: 1px solid transparent;
 	            transition: all 0.2s;
