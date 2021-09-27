@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import App from './App'
 import Vant from 'vant'
-
+// import 'vant/lib/index.less'
 
 Vue.config.productionTip = false
 
