@@ -8,23 +8,12 @@
 				
 		},
 		{
-			"path": "pages/car/index",
+			"path": "pages/discount/index",
 			"style":{
-				"navigationBarTitleText":"购物车"
-			}
-		},
-		{
-			"path": "pages/class/index",
-			"style":{
-				"navigationBarTitleText":"分类"
-			}
-		},
-		{
-			"path": "pages/user/index",
-			"style":{
-				"navigationBarTitleText":"个人中心"
+				"navigationBarTitleText":"促销打折"
 			}
 		}
+	
 	   
             
         

@@ -19,9 +19,9 @@
 			</view>
 		</view>
 		<ul class="serve">
-			<li v-for="item in serveList">
-				<image v-if="item.src" src="item.src"></image>
-				<view v-else class="serve-item"></view>
+			<li v-for="(item,index) in serveList" :key="index">
+			
+				<view class="serve-item" @click="toServe(item)"></view>
 				<span>{{item.name}}</span>
 			</li>
 		</ul>
@@ -102,6 +102,19 @@
 				item.src = (require('../../static/' + 10 + index + '.webp'))
 			})
 		},
+		methods:{
+			toServe(item){
+			   
+				if(item.name==="促销打折"){
+					console.log(11)
+					uni.navigateTo({
+							url: '/pages/discount/index'
+					})
+
+				}
+				
+			}
+		}
 	}
 </script>
 <style scoped lang="less">
